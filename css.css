@@ -57,6 +57,8 @@ h6 {
   background             : -webkit-linear-gradient(#1277a5, #19bcad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size              : 28pt;
+  font-weight            : 400;
 }
 
 .fotof {
@@ -90,21 +92,37 @@ h6 {
   width: 60%;
 }
 
+.medi {
+  background           : url('i/icon-li1.png');
+  background-repeat    : no-repeat;
+  background-position-y: center;
+  background-position-x: 20px;
+
+}
+
+.farm {
+  background           : url('i/icon-li2.png');
+  background-repeat    : no-repeat;
+  background-position-y: center;
+  background-position-x: 20px;
+}
+
 .btsx {
   border-radius     : 10px;
   color             : #fff;
   text-align        : left;
-  background-color  : rgb(9, 117, 206);
+  background-color  : #09CBA9;
   font-size         : 1.2em;
   -webkit-transition: background 0.3s 0s ease;
   -moz-transition   : background 0.3s 0s ease;
   -o-transition     : background 0.3s 0s ease;
   transition        : background 0.3s 0s ease;
-
+  padding           : 30px;
+  padding-left      : 100px;
 }
 
 .btsx:hover {
-  background-color     : rgb(206, 154, 9);
+  background-color     : #E48024;
   color                : #fff;
   text-decoration      : none;
   border-radius        : 10px;
@@ -115,15 +133,18 @@ h6 {
 }
 
 .btsx span {
-  text-transform: uppercase;
-  margin-top    : -10px;
-
+  text-transform   : uppercase;
+  /* margin-top    : -10px;*/
 }
 
 .btsx span:nth-child(2) {
   font-size  : 1.3em;
   font-weight: bold;
+  margin-top : -10px;
+
 }
+
+
 
 /* --------------------------- 6 features imagens --------------------------- */
 
@@ -224,14 +245,83 @@ hr {
 }
 
 .contato h2 {
-  color     : rgb(0, 179, 202);
-  text-align: center;
-  font-size : 3em;
+  color      : #09CBA9;
+  text-align : center;
+  font-size  : 3em;
+  font-weight: 400;
+}
+
+.contato h1 {
+  color: #fff;
+}
+
+input,
+textarea {
+  background-color: none;
+  background      : none;
+  border          : 1px solid rgba(255, 255, 255, 0.5);
+  padding         : 20px;
+  color           : #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
 }
 
 .contato h2 span {
   color: #fff;
 
+}
+
+.contato hr {
+  border-bottom: 1px solid #09CBA9;
+}
+
+.btf {
+  padding         : 20px;
+  border          : 0px;
+  color           : #fff;
+  text-align      : left;
+  background-color: #09CBA9;
+  ;
+  font-size         : 1.2em;
+  -webkit-transition: background 0.3s 0s ease;
+  -moz-transition   : background 0.3s 0s ease;
+  -o-transition     : background 0.3s 0s ease;
+  transition        : background 0.3s 0s ease;
+}
+
+.btf:hover {
+  background-color: #E48024;
+  color           : #fff;
+  text-decoration : none;
+
+
+}
+
+.formc {
+  border-left : 1px solid #09CBA9;
+  padding-left: 40px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color  : #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
 }
 
 /* --------------------------------- contato -------------------------------- */
