@@ -5,14 +5,11 @@
   font-family: 'Ubuntu', 'Segoe UI', sans-serif;
 }
 
+/* config animate */
 /*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
+:root {
+  --animate-delay   : 0.1s;
+  --animate-duration: 200ms;
 }*/
 
 /* ------------------------------- reset bruno ------------------------------ */
