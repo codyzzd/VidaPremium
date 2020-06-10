@@ -1,45 +1,147 @@
-.icone-f {
-    margin-bottom: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 
-.features {
-    background-image   : url("./i/features.jpg");
-    background-position: center;
-    background-size    : cover;
-    color              : #fff;
 
+.icone-f3 {
+  margin-bottom: 20px;
+}
+
+.features3 {
+  background-image   : url("./i/features.jpg");
+  background-position: center;
+  background-size    : cover;
+  color              : #fff;
+  text-align         : center;
+}
+
+.features3 h5 {
+  font-size: 1.2em;
 }
 
 .carousel-caption h5 {
-    font-size: 4em;
-    width    : 40%;
+  font-size: 4em;
+  width    : 40%;
 }
 
 .carousel-caption p {
-    font-size: 1.5em;
-    width    : 30%;
+  font-size: 1.5em;
+  width    : 30%;
 }
 
-.features3 h1,
-.features3 h2 {
-    background             : -webkit-linear-gradient(#1277a5, #19bcad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.features6 {
+  text-align: center;
 }
 
-.itemf1 {
-    width              : 34%;
-    background-image   : url("./i/bnft1.jpg");
-    background-position: center;
-    background-size    : cover;
-    height             : 200px;
+.features6 h1,
+.features6 h2 {
+  background             : -webkit-linear-gradient(#1277a5, #19bcad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    /*background: rgba(41, 79, 117, 0);
-    background: -moz-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41, 79, 117, 0)), color-stop(42%, rgba(41, 79, 117, 0)), color-stop(100%, rgba(0, 0, 0, 0.73)));
-    background: -webkit-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-    background: -o-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-    background: -ms-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-    background: linear-gradient(to bottom, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#294f75', endColorstr='#000000', GradientType=0);*/
+.fotof {
+  width           : 100%;
+  background-image: url("./i/bnft1.jpg");
+
+  background-repeat  : no-repeat;
+  background-position: top;
+  background-size    : cover;
+  height             : 300px;
+  margin-bottom      : 30px;
+
+}
+
+.fotoi {
+  padding   : 30px;
+  color     : #fff;
+  height    : 100%;
+  width     : 100%;
+  background: rgba(41, 79, 117, 0);
+  background: -moz-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41, 79, 117, 0)), color-stop(42%, rgba(41, 79, 117, 0)), color-stop(100%, rgba(0, 0, 0, 0.73)));
+  background: -webkit-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
+  background: -o-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
+  background: -ms-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
+  background: linear-gradient(to bottom, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
+  filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#294f75', endColorstr='#000000', GradientType=0);
+}
+
+.fotoi h3 {
+  width: 60%;
+}
+
+.depoimentos {
+  background-color: #dfdfdf;
+}
+
+.depo {
+  text-align  : center;
+  /*font-size : 1.2em;*/
+}
+
+.depoimentos p {
+  font-size: 1.2em;
+}
+
+.depo img {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 40px;
+  margin-top   : 40px;
+  padding      : 0px;
+  border       : 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.previ img {
+  height     : 100%;
+  margin-left: 40px;
+}
+
+.depoimentos .nome {
+  color: #1277a5;
+}
+
+.features8 {
+  background-image   : url("./i/bgempresas.jpg");
+  background-position: center;
+  background-size    : cover;
+  color              : #fff;
+  text-align         : center;
+}
+
+.features8 h1 {
+  font-size     : 3em;
+  letter-spacing: -1px;
+}
+
+.features8 h1 span {
+  color: #f1a80b;
+}
+
+.f8texto {
+  font-size: 1.2em;
+}
+
+.contato {
+  background-color: #535353;
+}
+
+.contato h2 {
+  color     : rgb(0, 179, 202);
+  text-align: center;
+  font-size : 3em;
+}
+
+.contato h2 span {
+  color: #fff;
+
 }
