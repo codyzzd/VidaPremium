@@ -1,0 +1,16 @@
+div {
+    /*border: 1px solid rgba(0, 0, 0, 0.5);*/
+
+}
+
+.icone-f {
+    margin-bottom: 20px;
+}
+
+.features {
+    background-image   : url("./i/features.jpg");
+    background-position: center;
+    background-size    : cover;
+    color              : #fff;
+
+}
