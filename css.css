@@ -1,35 +1,123 @@
 /* ------------------------------- reset bruno ------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
-  font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+  font-family: "Ubuntu", "Segoe UI", sans-serif;
 }
 
 /* ------------------------------- reset bruno ------------------------------ */
+
+/* --------------------------------- swiper --------------------------------- */
+.slid1 {
+  background-image: url("i/banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slid2 {
+  background-image: url("i/banner-maior.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slid3 {
+  background-image: url("i/banner-cartão-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #fff;
+}
+.swiper-slide h1 {
+  font-size: 38pt;
+  font-weight: 500;
+  color: #fff;
+  line-height: 50px;
+}
+.swiper-slide p {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 400;
+}
+.swiper-container {
+  height: 300px;
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .swiper-container {
+    height: 400px;
+  }
+  .swiper-container h1 {
+    margin-top: 50px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .swiper-container {
+    height: 500px;
+  }
+  .swiper-container h1 {
+    margin-top: 100px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .swiper-container {
+    height: 600px;
+  }
+  .swiper-container h1 {
+    margin-top: 200px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .swiper-container {
+    height: 900px;
+  }
+  .swiper-container h1 {
+    margin-top: 400px;
+  }
+}
+
+/* --------------------------------- swiper --------------------------------- */
 
 /* --------------------------- 3 features laranja --------------------------- */
 
 .icone-f3 {
   margin-bottom: 20px;
-  height       : 120px;
+  height: 120px;
 }
 
 .features3 {
-  background-image     : url("./i/features.jpg");
-  background-position  : center;
-  background-size      : cover;
-  color                : #fff;
-  text-align           : center;
-  padding              : 70px 0px 70px 0px;
-  letter-spacing       : -1px;
-  line-height          : 1.5em;
+  background-image: url("./i/features.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0px 70px 0px;
+  letter-spacing: -1px;
+
   /*margin-bottom      : 2px;*/
-
-
 }
 
 .features3 h5 {
-  font-size  : 1.2em;
+  line-height: 1.3em;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -39,102 +127,140 @@
 
 .features6 {
   text-align: center;
-  padding   : 50px 0px 50px 0px
+  padding: 50px 0px 50px 0px;
 }
 
 .features6 h1,
 .features6 h2 {
-  background             : -webkit-linear-gradient(#1277a5, #19bcad);
+  background: -webkit-linear-gradient(#1277a5, #19bcad);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size              : 28pt;
-  font-weight            : 400;
+  font-size: 28pt;
+  font-weight: 400;
 }
 
 .fotof {
-  width           : 100%;
-  background-image: url("./i/bnft1.jpg");
-
-  background-repeat  : no-repeat;
+  width: 100%;
+  background-repeat: no-repeat;
   background-position: top;
-  background-size    : cover;
-  height             : 300px;
-  margin-bottom      : 30px;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 30px;
+}
 
+.fotof1 {
+  background-image: url("./i/bnft1.jpg");
+}
+.fotof2 {
+  background-image: url("./i/bnft2.jpg");
+}
+.fotof3 {
+  background-image: url("./i/bnft3.jpg");
+}
+.fotof4 {
+  background-image: url("./i/bnft4.jpg");
+}
+.fotof5 {
+  background-image: url("./i/bnft5.jpg");
+}
+.fotof6 {
+  background-image: url("./i/bnft6.jpg");
 }
 
 .fotoi {
-  padding   : 30px;
-  color     : #fff;
-  height    : 100%;
-  width     : 100%;
+  padding: 30px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
   background: rgba(41, 79, 117, 0);
-  background: -moz-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41, 79, 117, 0)), color-stop(42%, rgba(41, 79, 117, 0)), color-stop(100%, rgba(0, 0, 0, 0.73)));
-  background: -webkit-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-  background: -o-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-  background: -ms-linear-gradient(top, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-  background: linear-gradient(to bottom, rgba(41, 79, 117, 0) 0%, rgba(41, 79, 117, 0) 42%, rgba(0, 0, 0, 0.73) 100%);
-  filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#294f75', endColorstr='#000000', GradientType=0);
+  background: -moz-linear-gradient(
+    top,
+    rgba(41, 79, 117, 0) 0%,
+    rgba(41, 79, 117, 0) 42%,
+    rgba(0, 0, 0, 0.73) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(41, 79, 117, 0)),
+    color-stop(42%, rgba(41, 79, 117, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.73))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(41, 79, 117, 0) 0%,
+    rgba(41, 79, 117, 0) 42%,
+    rgba(0, 0, 0, 0.73) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(41, 79, 117, 0) 0%,
+    rgba(41, 79, 117, 0) 42%,
+    rgba(0, 0, 0, 0.73) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(41, 79, 117, 0) 0%,
+    rgba(41, 79, 117, 0) 42%,
+    rgba(0, 0, 0, 0.73) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(41, 79, 117, 0) 0%,
+    rgba(41, 79, 117, 0) 42%,
+    rgba(0, 0, 0, 0.73) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#294f75', endColorstr='#000000', GradientType=0);
 }
 
 .fotoi h3 {
   width: 60%;
 }
 
-.medi {
-  background           : url('i/icon-li1.png');
-  background-repeat    : no-repeat;
-  background-position-y: center;
-  background-position-x: 20px;
-
-}
-
-.farm {
-  background           : url('i/icon-li2.png');
-  background-repeat    : no-repeat;
-  background-position-y: center;
-  background-position-x: 20px;
-}
-
 .btsx {
-  border-radius     : 10px;
-  color             : #fff;
-  text-align        : left;
-  background-color  : #09CBA9;
-  font-size         : 1.2em;
+  border-radius: 10px;
+  color: #fff;
+  text-align: left;
+  background-color: #09cba9;
+  font-size: 1.2em;
   -webkit-transition: background 0.3s 0s ease;
-  -moz-transition   : background 0.3s 0s ease;
-  -o-transition     : background 0.3s 0s ease;
-  transition        : background 0.3s 0s ease;
-  padding           : 30px;
-  padding-left      : 100px;
+  -moz-transition: background 0.3s 0s ease;
+  -o-transition: background 0.3s 0s ease;
+  transition: background 0.3s 0s ease;
+  padding: 15px 20px 15px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .btsx:hover {
-  background-color     : #E48024;
-  color                : #fff;
-  text-decoration      : none;
-  border-radius        : 10px;
+  background-color: #e48024;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
-  -moz-border-radius   : 10px;
-  -ms-border-radius    : 10px;
-  -o-border-radius     : 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.btsx i {
+  font-size: 2.5em;
 }
 
 .btsx span {
-  text-transform   : uppercase;
+  text-transform: uppercase;
+
   /* margin-top    : -10px;*/
 }
-
+/*
 .btsx span:nth-child(2) {
-  font-size  : 1.3em;
+  font-size: 1.3em;
   font-weight: bold;
-  margin-top : -10px;
-
-}
-
-
+  margin-top: -10px;
+}*/
 
 /* --------------------------- 6 features imagens --------------------------- */
 
@@ -145,12 +271,12 @@
 }
 
 .depo {
-  text-align  : center;
+  text-align: center;
   /*font-size : 1.2em;*/
 }
 
 .depoimentos p {
-  font-size  : 1.2em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 
@@ -160,35 +286,35 @@
 
 .depo img {
   margin-bottom: 20px;
-  height       : 200px;
+  height: 200px;
 }
 
 hr {
   margin-bottom: 40px;
-  margin-top   : 40px;
-  padding      : 0px;
-  border       : 0px;
+  margin-top: 40px;
+  padding: 0px;
+  border: 0px;
   border-bottom: 1px solid #ccc;
 }
 
 .previ img {
-  height     : 100%;
+  height: 100%;
   margin-left: 40px;
 }
 
 .depoimentos .nome {
-  color         : #1277a5;
+  color: #1277a5;
   letter-spacing: -1px;
-  font-weight   : 400;
+  font-weight: 400;
 }
 
 .depoimentos .container {
-  padding: 100px 0px 100px 0px
+  padding: 100px 0px 100px 0px;
 }
 
 .depoimentos img.cliente {
   border-radius: 50%;
-  border       : 5px solid #1277a5;
+  border: 5px solid #1277a5;
 }
 
 /* ------------------------------- depoimentos ------------------------------ */
@@ -196,33 +322,34 @@ hr {
 /* ----------------------------- 8 features azul ---------------------------- */
 
 .features8 {
-  background-image   : url("./i/bgempresas.jpg");
+  background-image: url("./i/bgempresas.jpg");
   background-position: center;
-  background-size    : cover;
-  color              : #fff;
-  text-align         : center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
 
-  padding: 100px 0px 100px 0px
+  padding: 100px 0px 100px 0px;
 }
 
 .features8 h1 {
-  font-size     : 3em;
+  font-size: 3em;
   letter-spacing: -2px;
-  font-weight   : 400;
+  font-weight: 400;
 }
 
 .features8 h1 span {
-  color: #EEC318;
+  color: #eec318;
 }
 
 .features8 h2 {
   font-weight: 300;
-  font-size  : 1.4em;
+  font-size: 1.4em;
 }
 
-.f8texto h4 {
-  font-size  : 1.1em;
-  font-weight: 400;
+.f8texto h5 {
+  line-height: 1.3em;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 /* ----------------------------- 8 features azul ---------------------------- */
@@ -231,13 +358,14 @@ hr {
 
 .contato {
   background-color: #535353;
-  padding         : 100px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
+  color: #fff;
 }
 
 .contato h2 {
-  color      : #09CBA9;
-  text-align : center;
-  font-size  : 3em;
+  color: #09cba9;
+  text-align: center;
+  font-size: 3em;
   font-weight: 400;
 }
 
@@ -248,58 +376,56 @@ hr {
 input,
 textarea {
   background-color: none;
-  background      : none;
-  border          : 1px solid rgba(255, 255, 255, 0.5);
-  padding         : 20px;
-  color           : #fff;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  color: #fff;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-
 }
 
 .contato h2 span {
   color: #fff;
-
 }
 
 .contato hr {
-  border-bottom: 1px solid #09CBA9;
+  border-bottom: 1px solid #09cba9;
 }
 
 .btf {
-  padding         : 20px;
-  border          : 0px;
-  color           : #fff;
-  text-align      : left;
-  background-color: #09CBA9;
-  ;
-  font-size         : 1.2em;
+  padding: 20px;
+  border: 0px;
+  color: #fff;
+  text-align: left;
+  background-color: #09cba9;
+  font-size: 1.2em;
   -webkit-transition: background 0.3s 0s ease;
-  -moz-transition   : background 0.3s 0s ease;
-  -o-transition     : background 0.3s 0s ease;
-  transition        : background 0.3s 0s ease;
+  -moz-transition: background 0.3s 0s ease;
+  -o-transition: background 0.3s 0s ease;
+  transition: background 0.3s 0s ease;
 }
 
 .btf:hover {
-  background-color: #E48024;
-  color           : #fff;
-  text-decoration : none;
-
-
+  background-color: #e48024;
+  color: #fff;
+  text-decoration: none;
 }
 
+.contato .d-flex p {
+  padding: 10px;
+}
 .formc {
-  border-left : 1px solid #09CBA9;
+  border-left: 1px solid #09cba9;
   padding-left: 40px;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color  : #fff;
+  color: #fff;
   opacity: 1;
   /* Firefox */
 }

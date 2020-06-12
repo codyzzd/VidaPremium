@@ -11,19 +11,97 @@
     <link rel="stylesheet" href="./bs/css/bootstrap-grid.min.css">
     <!-- Configurando Responsivo Bootstrap -->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Carregando swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Carregando CSS -->
     <link rel="stylesheet" href="css.css">
-    <!-- animate wow -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   </head>
 
   <body>
 
     <!-- slider -->
+    <!-- Slider main container -->
+    <div class="swiper-container container-fluid">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slid1">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1>Mais Barato.<br>
+                  Mais Benefícios.<br>
+                  Um só Plano.</h1>
+                <p>Garanta o melhor plano de benefícios do Brasil<br>
+                  por um valor que cabe no bolso.</p>
+                <div class="d-flex">
+                  <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-5 py-4">
+                    <span>Saiba Mais</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide slid2">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1>Sem boleto,<br>
+                  nem cartão de<br>
+                  crédito.</h1>
+                <p>Não receba boletos por e-mail, nem cobranças<br>
+                  em seu cartão. Vida Premium é diferente.</p>
+                <div class="d-flex">
+                  <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-5 py-4">
+                    <span>Saiba Mais</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide slid3">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1>Seja você<br>
+                  também<br>
+                  Vida Premium.</h1>
+                <p>Com o cartão Vida Premium, você tem acesso a<br>
+                  varios serviços, descontos e mais.</p>
+                <div class="d-flex">
+                  <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-5 py-4">
+                    <span>Saiba Mais</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <!--<div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>-->
+
+      <!-- If we need scrollbar -->
+      <!--<div class="swiper-scrollbar"></div>-->
+    </div>
 
     <!-- features 6 -->
-    <div class="container features6">
+    <section class="container features6">
       <div class="container ">
         <div class="row pb-5">
           <div class="col-12">
@@ -35,7 +113,7 @@
         <div class="row">
           <div class="col-12 col-lg-4">
 
-            <div class="fotof wow animate__animated animate__zoomIn">
+            <div class="fotof fotof1 wow animate__animated animate__zoomIn">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Assistência Funeral Familiar</h3>
               </div>
@@ -44,7 +122,7 @@
           </div>
           <div class="col-12 col-lg-4">
 
-            <div class="fotof wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+            <div class="fotof fotof2 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Check-up Anual</h3>
               </div>
@@ -53,7 +131,7 @@
           </div>
           <div class="col-12 col-lg-4">
 
-            <div class="fotof wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+            <div class="fotof fotof3 wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Seguro Contra Acidentes</h3>
               </div>
@@ -65,7 +143,7 @@
         <div class="row">
           <div class="col-12 col-lg-4 ">
 
-            <div class="fotof wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
+            <div class="fotof fotof4 wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Descontos em medicamentos</h3>
               </div>
@@ -74,7 +152,7 @@
           </div>
           <div class="col-12 col-lg-4">
 
-            <div class="fotof wow animate__animated animate__zoomIn" data-wow-delay="0.8s">
+            <div class="fotof fotof5 wow animate__animated animate__zoomIn" data-wow-delay="0.8s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Orientação Médica por Telefone</h3>
               </div>
@@ -83,7 +161,7 @@
           </div>
           <div class="col-12 col-lg-4">
 
-            <div class="fotof wow animate__animated animate__zoomIn" data-wow-delay="1s">
+            <div class="fotof fotof6 wow animate__animated animate__zoomIn" data-wow-delay="1s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Sorteio Mensal de R$ 20.000,00</h3>
               </div>
@@ -91,24 +169,34 @@
 
           </div>
         </div>
+        <div class="row justify-content-center">
 
-        <div class="row justify-content-center bts">
-          <a href="#" class="col-12 btsx mx-2 medi mb-3 col-md-4 wow animate__animated animate__fadeInUp">
-            <span>Veja a lista de todos os</span>
-            <span>medicamentos</span>
-          </a>
-          <a href="#" class="col-12 btsx mx-2 farm mb-3 col-md-4 wow animate__animated animate__fadeInUp"
+          <a href="#"
+            class="col-12 btsx mx-2 farm mb-3 col-md-4 wow animate__animated animate__fadeInUp align-items-center d-flex"
             data-wow-delay="0.2s">
-            <span>Veja a lista de todos os</span>
-            <span>farmácias</span>
+            <i class="fas fa-capsules mr-3"></i>
+            <div class="">
+              <span>Veja a lista de todos os</span>
+              <span>medicamentos</span>
+            </div>
           </a>
-        </div>
 
+          <a href="#"
+            class="col-12 btsx mx-2 farm mb-3 col-md-4 wow animate__animated animate__fadeInUp align-items-center d-flex"
+            data-wow-delay="0.2s">
+            <i class="fas fa-store-alt mr-3"></i>
+            <div class="">
+              <span>Veja a lista de todos os</span>
+              <span>farmácias</span>
+            </div>
+          </a>
+
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- features 3 -->
-    <div class="container-fluid features3 text-center">
+    <section class="container-fluid features3 text-center">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-md-3 mb-3 wow animate__animated animate__fadeInUp">
@@ -127,10 +215,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- depoimentos -->
-    <div class="container-fluid depoimentos">
+    <dsection class="container-fluid depoimentos">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-md-3 depo wow animate__animated animate__fadeInUp">
@@ -165,10 +253,10 @@
           <img src="i/marcas2.png" alt="previ" class="flex-grow-1">
         </div>
       </div>
-    </div>
+    </dsection>
 
     <!-- 8 features -->
-    <div class="container-fluid features8">
+    <section class="container-fluid features8">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -180,74 +268,82 @@
         <div class="row">
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp">
             <img src="i/iconemp1.png" alt="f8">
-            <h4>DESCONTO<br>
-              EM FOLHA DE<br>
-              PAGAMENTO</h4>
+            <h5>Desconto<br>em folha de<br>pagamento</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
             <img src="i/iconemp2.png" alt="f8">
-            <h4>DESCONTOS<br>
-              EM 2600<br>
-              MEDICAMENTOS</h4>
+            <h5>Descontos<br>em 2600<br>medicamentos</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
             <img src="i/iconemp3.png" alt="f8">
-            <h4>MAIS DE<br>
-              10.0000<br>
-              FARMÁCIAS</h4>
+            <h5>Mais de<br>10.0000<br>farmácias</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <img src="i/iconemp4.png" alt="f8">
-            <h4>ORIENTAÇÃO<br>
-              MÉDICA POR<br>
-              TELEFONE 24H</h4>
+            <h5>Orientação<br>médica por<br>telefone 24h</h5>
           </div>
         </div>
         <div class="row">
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
             <img src="i/iconemp5.png" alt="f8">
-            <h4>CHECK-UP<br>
-              ANUAL</h4>
+            <h5>Check-up<br>anual</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="1s">
             <img src="i/iconemp6.png" alt="f8">
-            <h4>SEGURO<br>
-              CONTRA<br>
-              ACIDENTES</h4>
+            <h5>Seguro<br>contra<br>acidentes</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
             <img src="i/iconemp7.png" alt="f8">
-            <h4>ASSISTÊNCIA<br>
-              FUNERAL<br>
-              FAMILIAR</h4>
+            <h5>Assistência<br>funeral<br>familiar</h5>
           </div>
           <div class="col-6 col-md-3 mb-5 f8texto wow animate__animated animate__fadeInUp" data-wow-delay="1.4s">
             <img src="i/iconemp8.png" alt="f8">
-            <h4>SORTEIOS<br>
-              MENSAIS<br>
-              DE R$ 20.000</h4>
+            <h5>Sorteios<br>mensais<br>de R$ 20.000</h5>
           </div>
         </div>
         <div class="d-flex justify-content-center bts">
-          <a href="#" class="d-flex btsx p-4 mx-2 flex-column wow animate__animated animate__fadeInUp">
-            <span>Planos Empresariais</span>
+          <a href="#"
+            class="col-12 btsx mx-2 farm mb-3 col-md-4 wow animate__animated animate__fadeInUp align-items-center d-flex justify-content-center"
+            data-wow-delay="0.2s">
+            <i class="fas fa-user-tie mr-3"></i>
+            <div class="">
+              <span>PLANOS EMPRESARIAIS</span>
+
+            </div>
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- final contato -->
-    <div class="container-fluid contato">
+    <footer class="container-fluid contato">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="py-5">Siga <span>@vidapremium</span> no Instagram</h2>
+            <h2 class="pb-5">Siga <span>@vidapremium</span> no Instagram</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
             <h1 class="py-3">Dúvidas</h1>
+
+            <a href="#" class="col-12 btsx mx-2 farm mb-3 col-md-6 align-items-center d-flex" data-wow-delay="0.2s">
+              <i class="fas fa-phone-alt mr-3"></i>
+              <div class="">
+                <span>Ligamos para</span>
+                <span>você</span>
+              </div>
+            </a>
+
+            <p>contato@vidapremium.com.br<br>
+              0800 275 7030<br>
+              (85) 98521-0838</p>
+
+            <p>Nossa Central de Atendimento funciona
+              de Segunda a Sexta, de 09h às 18h.</p>
+            <h1 class="py-3">Curta no facebook</h1>
           </div>
+
           <div class="col-12 col-md-6">
             <h1 class="py-3">Fale com a gente</h1>
             <form class="d-flex flex-column formc">
@@ -259,10 +355,10 @@
             </form>
           </div>
         </div>
-        <hr>
+
       </div>
 
-    </div>
+    </footer>
 
     <!-- Carregando Bootstrap com JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -274,9 +370,36 @@
     <script src="./bs/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+    <!-- Carregando icones fontawesome -->
+    <script src="https://kit.fontawesome.com/86798a21bd.js" crossorigin="anonymous"></script>
+    <!-- Carregando swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- carregando wow animacoes js -->
     <script src="./wow/wow.js"></script>
     <script>
       new WOW().init();
+
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination', clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
     </script>
   </body>
 
