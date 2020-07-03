@@ -25,27 +25,27 @@
     <!-- Slider main container -->
     <div class="swiper-container container-fluid">
 
-      <div class="container">
-        <header class="row">
-          <div class="col-12 menu d-flex justify-content-between py-5">
+      <header class="container">
+        <div class="row">
+          <div class="col-12 menu d-flex justify-content-between py-4 align-items-center">
 
             <img src="http://vidapremium.com.br/wp-content/themes/metro/images/logo.png" alt="" style="height: 70px;">
 
-            <ul class="d-flex align-self-center">
-              <li class="d-flex mx-2">Benefícios</li>
-              <li class="d-flex mx-2">Preços</li>
-              <li class="d-flex mx-2">Para Empresas</li>
-              <li class="d-flex mx-2">Contato</li>
-              <li class="d-flex mx-2">Área do Cliente</li>
+            <ul class="d-flex mt-4">
+              <li class="d-flex mx-2"><a href="#beneficios">Benefícios</a></li>
+              <li class="d-flex mx-2"><a href="">Preços</a></li>
+              <li class="d-flex mx-2"><a href="#praempresas">Para Empresas</a></li>
+              <li class="d-flex mx-2"><a href="#contato">Contato</a></li>
+              <li class="d-flex mx-2"><a href="">Área do Cliente</a></li>
             </ul>
 
-            <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-3 py-4">
+            <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-3 py-3">
               <span>Apenas R$ <spa style="font-size: 1.5em;">39</spa>,90</span>
             </a>
 
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
 
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
@@ -124,8 +124,9 @@
     </div>
 
     <!-- features 6 -->
+    <a name="beneficios"></a>
     <section class="container features6">
-      <div class="container ">
+      <div class="container">
         <div class="row pb-5">
           <div class="col-12">
             <h1>Cuide da sua saúde, check-up's anuais com exames e muito mais...</h1>
@@ -139,6 +140,12 @@
             <div class="fotof fotof1 wow animate__animated animate__zoomIn">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Assistência Funeral Familiar</h3>
+                <p class="hide ">Você e sua família ficam protegidos com uma cobertura completa de assistência
+                  funerária,
+                  estendida a
+                  você, seu cônjuge,
+                  seus pais, seus filhos e sogros.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -148,6 +155,10 @@
             <div class="fotof fotof2 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Check-up Anual</h3>
+                <p class="hide">Um atendimento completo para realização de seu check-up, com consulta com um clínico
+                  geral e uma bateria de exames
+                  laboratoriais, e ainda sua consulta de retorno.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -157,6 +168,10 @@
             <div class="fotof fotof3 wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Seguro Contra Acidentes</h3>
+                <p class="hide">Você fica protegido com uma apólice de seguro contra acidentes pessoais de até R$
+                  5.000,00. Desse modo você garante a
+                  segurança da família mesmo em caso de óbito acidental.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -169,6 +184,10 @@
             <div class="fotof fotof4 wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Descontos em medicamentos</h3>
+                <p class="hide">Aproveite até 60% de desconto em mais de 2.600 medicamentos em uma rede com mais de
+                  10.000 farmácias pelo Brasil.
+                  Confira a lista completa de remédios e farmácias logo abaixo.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -178,6 +197,11 @@
             <div class="fotof fotof5 wow animate__animated animate__zoomIn" data-wow-delay="0.8s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Orientação Médica por Telefone</h3>
+                <p class="hide">Conte com atendimento 24h de profissionais médicos disponíveis para esclarecer suas
+                  dúvidas em
+                  ocorrências, em ações de
+                  primeiros socorros, em medicina preventiva e mais.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -187,6 +211,9 @@
             <div class="fotof fotof6 wow animate__animated animate__zoomIn" data-wow-delay="1s">
               <div class="fotoi d-flex flex-column justify-content-end align-items-center">
                 <h3>Sorteio Mensal de R$ 20.000,00</h3>
+                <p class="hide">Você concorre ainda a um sorteio mensal de R$ 20.000,00 realizado no último sábado de
+                  cada mês pela Caixa Capitalização.</p>
+                <span class="btmais"></span>
               </div>
             </div>
 
@@ -279,6 +306,7 @@
     </dsection>
 
     <!-- 8 features -->
+    <a name="praempresas"></a>
     <section class="container-fluid features8">
       <div class="container">
         <div class="row">
@@ -339,6 +367,7 @@
     </section>
 
     <!-- final contato -->
+    <a name="contato"></a>
     <footer class="container-fluid contato">
       <div class="container">
         <div class="row">
@@ -401,6 +430,10 @@
     <script src="./wow/wow.js"></script>
     <script>
       new WOW().init();
+
+      $(".fotof").click(function () {
+        $(this).toggleClass("foto_ativado");
+      });
 
       var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters

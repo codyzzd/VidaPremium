@@ -4,10 +4,8 @@
 * {
   font-family: "Ubuntu", "Segoe UI", sans-serif;
 }
-@media (prefers-reduced-motion) {
-  .animation {
-    animation-name: dissolve;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 /* ------------------------------- reset bruno ------------------------------ */
@@ -91,9 +89,6 @@
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  /* .container {
-    width: 1200px;
-  }*/
   .swiper-container {
     height: 900px;
   }
@@ -181,13 +176,21 @@
 .fotof6 {
   background-image: url("./i/bnft6.jpg");
 }
+.foto_ativado .fotoi {
+  background-color: rgba(22, 68, 99, 0.7) !important;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
 
 .fotoi {
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
   padding: 30px;
   color: #fff;
   height: 100%;
@@ -230,7 +233,54 @@
     rgba(41, 79, 117, 0) 42%,
     rgba(0, 0, 0, 0.73) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#294f75', endColorstr='#000000', GradientType=0);
+  filter: ;
+  progid: DXImageTransform.Microsoft.gradient(
+    startColorstr= "#294f75",
+    endColorstr= "#000000",
+    GradientType=0
+  );
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.fotoi p.hide {
+  height: 0px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 0);
+}
+.foto_ativado p.hide {
+  height: 50%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 1);
+}
+
+.btmais {
+  background-image: url("http://vidapremium.com.br/wp-content/themes/metro/images/more.png");
+  /*left: calc(50% - 17px);*/
+  /*display: inline-block;*/
+  width: 35px;
+  height: 35px;
+  background-position-y: top;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.foto_ativado .btmais {
+  background-position-y: bottom;
 }
 
 .fotoi h3 {
@@ -469,8 +519,20 @@ select:focus {
   text-transform: uppercase;
 }
 header {
-  /* position: fixed; /* Set the navbar to fixed position */
-  /* top: 0; /* Position the navbar at the top of the page */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.menu ul li a:link {
+  color: #454554;
+}
+.menu ul li a:hover {
+  color: #454554;
+}
+.menu ul li a:visited {
+  color: #454554;
 }
 
 /* ---------------------------------- menu ---------------------------------- */
