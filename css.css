@@ -4,6 +4,11 @@
 * {
   font-family: "Ubuntu", "Segoe UI", sans-serif;
 }
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: dissolve;
+  }
+}
 
 /* ------------------------------- reset bruno ------------------------------ */
 
@@ -86,6 +91,9 @@
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  /* .container {
+    width: 1200px;
+  }*/
   .swiper-container {
     height: 900px;
   }
@@ -147,6 +155,12 @@
   background-size: cover;
   height: 300px;
   margin-bottom: 30px;
+
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .fotof1 {
@@ -169,6 +183,11 @@
 }
 
 .fotoi {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   padding: 30px;
   color: #fff;
   height: 100%;
@@ -441,3 +460,17 @@ select:focus {
 }
 
 /* --------------------------------- contato -------------------------------- */
+
+/* ---------------------------------- menu ---------------------------------- */
+.menu ul li {
+  list-style: none;
+}
+.menu ul {
+  text-transform: uppercase;
+}
+header {
+  /* position: fixed; /* Set the navbar to fixed position */
+  /* top: 0; /* Position the navbar at the top of the page */
+}
+
+/* ---------------------------------- menu ---------------------------------- */
