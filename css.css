@@ -57,45 +57,6 @@ html {
 .swiper-container {
   height: 300px;
 }
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .swiper-container {
-    height: 400px;
-  }
-  .swiper-container h1 {
-    margin-top: 50px;
-  }
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  .swiper-container {
-    height: 500px;
-  }
-  .swiper-container h1 {
-    margin-top: 100px;
-  }
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  .swiper-container {
-    height: 600px;
-  }
-  .swiper-container h1 {
-    margin-top: 200px;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .swiper-container {
-    height: 900px;
-  }
-  .swiper-container h1 {
-    margin-top: 400px;
-  }
-}
 
 /* --------------------------------- swiper --------------------------------- */
 
@@ -247,22 +208,22 @@ html {
 }
 
 .fotoi p.hide {
-  height: 0px;
+  height: 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  color: rgba(255, 255, 255, 0);
+  opacity: 0;
 }
 .foto_ativado p.hide {
-  height: 50%;
+  height: 130px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  color: rgba(255, 255, 255, 1);
+  opacity: 100;
 }
 
 .btmais {
@@ -536,3 +497,75 @@ header {
 }
 
 /* ---------------------------------- menu ---------------------------------- */
+
+/* --------------------------------- listas --------------------------------- */
+.listas h2 {
+  background: -webkit-linear-gradient(#1277a5, #19bcad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28pt;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.corzinha {
+  background: -webkit-linear-gradient(#1277a5, #19bcad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------------------- listas --------------------------------- */
+
+/* --------------------------------- config --------------------------------- */
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .swiper-container {
+    height: 400px;
+  }
+  .swiper-container h1 {
+    margin-top: 50px;
+  }
+  .fotomulher {
+    display: none;
+    text-align: center;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .swiper-container {
+    height: 500px;
+  }
+  .swiper-container h1 {
+    margin-top: 100px;
+  }
+  .fotomulher {
+    display: none;
+    text-align: center;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .swiper-container {
+    height: 600px;
+  }
+  .swiper-container h1 {
+    margin-top: 200px;
+  }
+  .fotomulher {
+    display: block;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .swiper-container {
+    height: 900px;
+  }
+  .swiper-container h1 {
+    margin-top: 400px;
+  }
+}
+/* --------------------------------- config --------------------------------- */
