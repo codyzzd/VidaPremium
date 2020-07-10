@@ -521,14 +521,33 @@ header {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .swiper-container {
-    height: 400px;
+    height: 500px;
   }
   .swiper-container h1 {
-    margin-top: 50px;
+    margin-top: 150px;
   }
   .fotomulher {
     display: none;
     text-align: center;
+  }
+
+  .mmenu {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.21);
+  }
+  .opcoes,
+  .btsx {
+    display: none !important;
+  }
+  .logo {
+    max-height: 40px;
+  }
+
+  .features6 h1,
+  .features6 h2 {
+    font-size: 20pt;
   }
 }
 
@@ -544,6 +563,27 @@ header {
     display: none;
     text-align: center;
   }
+
+  header logo {
+    max-height: 25px;
+  }
+  .mmenu {
+    background-color: #fff;
+  }
+  .opcoes,
+  .btsx {
+    visibility: visible;
+  }
+
+  header ul {
+    font-size: 0.8em;
+  }
+  .btsx {
+    font-size: 0.9em;
+  }
+  .btsx span {
+    font-size: 1em;
+  }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -557,6 +597,22 @@ header {
   .fotomulher {
     display: block;
   }
+
+  .mmenu {
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  header logo {
+    height: 50px;
+  }
+  header ul {
+    font-size: 1em;
+  }
+  .opcoes,
+  .btsx {
+    display: inline-flex !important;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -566,6 +622,16 @@ header {
   }
   .swiper-container h1 {
     margin-top: 400px;
+  }
+
+  .logo {
+    min-height: 70px;
+  }
+  .btsx {
+    font-size: 0.7em;
+  }
+  .btsx span {
+    font-size: 2em;
   }
 }
 /* --------------------------------- config --------------------------------- */

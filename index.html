@@ -14,7 +14,7 @@
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- Carregando swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Carregando CSS -->
     <link rel="stylesheet" href="css.css">
   </head>
@@ -25,24 +25,27 @@
     <!-- Slider main container -->
     <div class="swiper-container container-fluid">
 
-      <header class="container">
-        <div class="row">
-          <div class="col-12 menu d-flex justify-content-between py-4 align-items-center">
+      <header class="container-fluid mmenu py-3">
+        <div class="container ">
+          <div class="row">
+            <div class="col-12 menu d-flex  justify-content-between align-items-center">
 
-            <img src="http://vidapremium.com.br/wp-content/themes/metro/images/logo.png" alt="" style="height: 70px;">
+              <img src="http://vidapremium.com.br/wp-content/themes/metro/images/logo.png" alt="" style="height: 70px;"
+                class="logo">
 
-            <ul class="d-flex mt-4">
-              <li class="d-flex mx-2"><a href="#beneficios">Benefícios</a></li>
-              <li class="d-flex mx-2"><a href="">Preços</a></li>
-              <li class="d-flex mx-2"><a href="#praempresas">Para Empresas</a></li>
-              <li class="d-flex mx-2"><a href="#contato">Contato</a></li>
-              <li class="d-flex mx-2"><a href="">Área do Cliente</a></li>
-            </ul>
+              <ul class="d-flex pl-0 mt-4 opcoes">
+                <li class="d-flex mx-2 "><a href="#beneficios">Benefícios</a></li>
+                <li class="d-flex mx-2"><a href="">Preços</a></li>
+                <li class="d-flex mx-2"><a href="#praempresas">Para Empresas</a></li>
+                <li class="d-flex mx-2"><a href="#contato">Contato</a></li>
+                <li class="d-flex mx-2"><a href="">Área do Cliente</a></li>
+              </ul>
 
-            <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-3 py-3">
-              <span>Apenas R$ <spa style="font-size: 1.5em;">39</spa>,90</span>
-            </a>
+              <a href="#" class="btsx d-flex align-items-center flex-shrink-1 px-3 py-3">
+                <span>Apenas R$ <span style="font-size: 1.5em;">39</span>,90</span>
+              </a>
 
+            </div>
           </div>
         </div>
       </header>
@@ -110,7 +113,7 @@
           </div>
 
         </div>
-        ...
+
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -321,7 +324,7 @@
     </section>
 
     <!-- depoimentos -->
-    <dsection class="container-fluid depoimentos">
+    <section class="container-fluid depoimentos">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-md-3 depo wow animate__animated animate__fadeInUp">
@@ -355,7 +358,7 @@
           <img src="i/marcas2.png" alt="previ" class="flex-grow-1">
         </div>
       </div>
-    </dsection>
+    </section>
 
     <!-- 8 features -->
     <a name="praempresas"></a>
@@ -477,16 +480,19 @@
     <!-- Carregando icones fontawesome -->
     <script src="https://kit.fontawesome.com/86798a21bd.js" crossorigin="anonymous"></script>
     <!-- Carregando swiper -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- carregando wow animacoes js -->
     <script src="./wow/wow.js"></script>
     <script>
+      //iniciar animacoes
       new WOW().init();
 
+      //iniciar funcoes de botoes com mais info
       $(".fotof").click(function () {
         $(this).toggleClass("foto_ativado");
       });
 
+      //iniciar slider
       var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
